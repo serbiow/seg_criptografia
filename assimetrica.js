@@ -16,5 +16,6 @@ function decryptRSA(encryptedText, privKey) {
 
 const mensagemRSA = "mensagem do raimundão";
 const criptografadoRSA = encryptRSA(mensagemRSA, publicKey);
-console.log("\nRSA Encriptado:", criptografadoRSA);
+console.log("\nChave pública:\n" + publicKey);
+console.log("RSA Encriptado:", criptografadoRSA);
 console.log("RSA Decriptado:", decryptRSA(criptografadoRSA, privateKey));
